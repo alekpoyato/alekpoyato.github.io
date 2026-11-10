@@ -1,0 +1,21 @@
+/* Shared appearance for long-form writing pages. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-padding-top: 24px; }
+body { margin: 50px; max-width: 680px; font-family: 'Monaco', 'Menlo', 'Consolas', monospace; font-size: 16px; line-height: 1.8; color: #202020; background: #fff; overflow-wrap: break-word; }
+h1 { font-size: 2em; line-height: 1.35; margin: 24px 0 16px; }
+h2 { font-size: 1.4em; line-height: 1.5; margin: 32px 0 16px; }
+p { margin: 0 0 24px; }
+a, a:visited { color: #287333; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #287333; outline-offset: 4px; }
+.byline { font-size: .9em; }
+blockquote { margin: 24px 28px; font-style: italic; }
+nav { position: fixed; right: 24px; top: 18px; width: 300px; max-height: calc(100vh - 36px); overflow-y: auto; }
+nav h2 { margin-top: 0; }
+nav ul { padding-left: 24px; }
+nav li { margin: 8px 0; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px dashed #777; font-size: .9em; }
+@media (max-width: 1150px) { nav { position: static; width: auto; max-height: none; margin: 32px 0; } }
+@media (max-width: 600px) { body { margin: 24px 20px; font-size: 15px; } h1 { font-size: 1.65em; } blockquote { margin: 24px 12px; } }
+@media print { body { max-width: none; margin: 0; font-size: 11pt; } nav, footer, header > a, .byline a { display: none; } a { color: inherit; } }
